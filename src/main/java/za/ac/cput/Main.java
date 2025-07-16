@@ -1,10 +1,15 @@
-package za.ac.cput.domain;
+package za.ac.cput;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import za.ac.cput.domain.Employee;
 import za.ac.cput.factory.EmployeeFactory;
 
+import java.time.LocalDate;
+@SpringBootApplication
 public class Main {
     public static void main(String[] args) {
-  Employee e1 = EmployeeFactory.createEmployee("12345", "Tumelo", "Ngwenya");
-   System.out.println(e1.toString());
+        SpringApplication.run(Main.class, args);
+
     }
 }
